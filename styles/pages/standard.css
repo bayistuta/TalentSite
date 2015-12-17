@@ -1,0 +1,193 @@
+/*serach section begin */
+/* line 8, ../../sass/pages/standard.scss */
+.section-search .search-bar {
+  padding: 0 10%;
+  height: 30px;
+  line-height: 30px;
+  overflow: hidden;
+  background-color: #f6f6f6;
+}
+/* line 15, ../../sass/pages/standard.scss */
+.section-search .search-bar ul li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  list-style: none;
+  margin-left: 7px;
+}
+/* line 21, ../../sass/pages/standard.scss */
+.section-search .search-bar ul li a.inactive {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+/* line 23, ../../sass/pages/standard.scss */
+.section-search .search-bar ul li a.inactive:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 27, ../../sass/pages/standard.scss */
+.section-search .search-bar ul li a i {
+  margin-right: 3px;
+}
+/* line 34, ../../sass/pages/standard.scss */
+.section-search .search-filter-head {
+  padding: 10px 10%;
+  overflow: hidden;
+  border-bottom: solid 1px #efefef;
+}
+/* line 38, ../../sass/pages/standard.scss */
+.section-search .search-filter-head a:first-child {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/* line 4, C:/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/styles/compass/typography/links/_hover-link.scss */
+.section-search .search-filter-head a:first-child:hover, .section-search .search-filter-head a:first-child:focus {
+  text-decoration: underline;
+}
+/* line 45, ../../sass/pages/standard.scss */
+.section-search .search-filter-head .input-group {
+  width: 300px;
+}
+@media (max-width: 768px) {
+  /* line 45, ../../sass/pages/standard.scss */
+  .section-search .search-filter-head .input-group {
+    width: 50%;
+  }
+}
+/* line 53, ../../sass/pages/standard.scss */
+.section-search .search-filters {
+  padding: 10px 10%;
+}
+/* line 55, ../../sass/pages/standard.scss */
+.section-search .search-filters .filter {
+  margin-bottom: 5px;
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  /* line 55, ../../sass/pages/standard.scss */
+  .section-search .search-filters .filter {
+    float: left;
+    width: 33.33333%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 55, ../../sass/pages/standard.scss */
+  .section-search .search-filters .filter {
+    float: left;
+    width: 25%;
+  }
+}
+/* line 61, ../../sass/pages/standard.scss */
+.section-search .search-filters .submit {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 50%;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  /* line 61, ../../sass/pages/standard.scss */
+  .section-search .search-filters .submit {
+    float: left;
+    width: 33.33333%;
+  }
+}
+@media (min-width: 768px) {
+  /* line 61, ../../sass/pages/standard.scss */
+  .section-search .search-filters .submit {
+    margin-left: 66.66667%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 61, ../../sass/pages/standard.scss */
+  .section-search .search-filters .submit {
+    margin-left: 75%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 61, ../../sass/pages/standard.scss */
+  .section-search .search-filters .submit {
+    float: left;
+    width: 25%;
+  }
+}
+
+/*search section end*/
+/* gallery begin */
+/* line 74, ../../sass/pages/standard.scss */
+.section-list {
+  padding: 20px 5%;
+}
+/* line 76, ../../sass/pages/standard.scss */
+.section-list .image {
+  margin-bottom: 15px;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  /* line 76, ../../sass/pages/standard.scss */
+  .section-list .image {
+    float: left;
+    width: 33.33333%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 76, ../../sass/pages/standard.scss */
+  .section-list .image {
+    float: left;
+    width: 25%;
+  }
+}
+/* line 82, ../../sass/pages/standard.scss */
+.section-list .image span {
+  margin-top: 3px;
+  display: inline-block;
+}
+
+/* gallery end */
+
+/*# sourceMappingURL=standard.css.map */
