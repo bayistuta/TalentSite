@@ -25,7 +25,7 @@
 /* makes the font 33% larger relative to the icon container */
 /* line 5, ../../sass/plugins/font-awesome/_larger.scss */
 .fa-lg {
-  font-size: 1.33333em;
+  font-size: 1.33333333em;
   line-height: 0.75em;
   vertical-align: -15%;
 }
@@ -52,14 +52,14 @@
 
 /* line 3, ../../sass/plugins/font-awesome/_fixed-width.scss */
 .fa-fw {
-  width: 1.28571em;
+  width: 1.28571429em;
   text-align: center;
 }
 
 /* line 4, ../../sass/plugins/font-awesome/_list.scss */
 .fa-ul {
   padding-left: 0;
-  margin-left: 2.14286em;
+  margin-left: 2.14285714em;
   list-style-type: none;
 }
 /* line 8, ../../sass/plugins/font-awesome/_list.scss */
@@ -70,14 +70,14 @@
 /* line 10, ../../sass/plugins/font-awesome/_list.scss */
 .fa-li {
   position: absolute;
-  left: -2.14286em;
-  width: 2.14286em;
-  top: 0.14286em;
+  left: -2.14285714em;
+  width: 2.14285714em;
+  top: 0.14285714em;
   text-align: center;
 }
 /* line 16, ../../sass/plugins/font-awesome/_list.scss */
 .fa-li.fa-lg {
-  left: -1.85714em;
+  left: -1.85714286em;
 }
 
 /* line 4, ../../sass/plugins/font-awesome/_bordered-pulled.scss */
@@ -3302,7 +3302,7 @@
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 4, C:/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_hover-link.scss */
 .section-search .search-filter-head a:first-child:hover, .section-search .search-filter-head a:first-child:focus {
   text-decoration: underline;
 }
@@ -3342,7 +3342,7 @@
   /* line 56, ../../sass/pages/standard.scss */
   .section-search .search-filters .filter {
     float: left;
-    width: 33.33333%;
+    width: 33.33333333%;
   }
 }
 @media (min-width: 992px) {
@@ -3374,13 +3374,13 @@
   /* line 62, ../../sass/pages/standard.scss */
   .section-search .search-filters .submit {
     float: left;
-    width: 33.33333%;
+    width: 33.33333333%;
   }
 }
 @media (min-width: 768px) {
   /* line 62, ../../sass/pages/standard.scss */
   .section-search .search-filters .submit {
-    margin-left: 66.66667%;
+    margin-left: 66.66666667%;
   }
 }
 @media (min-width: 992px) {
@@ -3430,7 +3430,7 @@
   /* line 77, ../../sass/pages/standard.scss */
   .section-list .image {
     float: left;
-    width: 33.33333%;
+    width: 33.33333333%;
   }
 }
 @media (min-width: 992px) {

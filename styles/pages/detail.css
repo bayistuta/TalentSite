@@ -1,3 +1,48 @@
+/* line 3, ../../sass/pages/detail.scss */
+.all .back {
+  padding: 150px 0 0 15%;
+}
 
+/* line 17, ../../sass/pages/detail.scss */
+.all .content {
+  border-top: 1px solid gainsboro;
+  padding: 20px 15%;
+}
+/* line 21, ../../sass/pages/detail.scss */
+.all .content .centercontent .name {
+  font-size: 18px;
+}
+/* line 24, ../../sass/pages/detail.scss */
+.all .content .centercontent .detail {
+  color: darkgray;
+  line-height: 40px;
+  padding-top: 40px;
+}
+/* line 28, ../../sass/pages/detail.scss */
+.all .content .centercontent .detail .lefts {
+  line-height: 20px;
+}
+/* line 34, ../../sass/pages/detail.scss */
+.all .content .centercontent .detail .rights {
+  line-height: 20px;
+}
+/* line 42, ../../sass/pages/detail.scss */
+.all .content .btnprint {
+  padding: 120px 0 0 5%;
+}
+/* line 44, ../../sass/pages/detail.scss */
+.all .content .btnprint a {
+  background-color: gainsboro;
+}
+/* line 47, ../../sass/pages/detail.scss */
+.all .content .btnprint :hover {
+  background-color: black;
+  color: white;
+}
+/* line 51, ../../sass/pages/detail.scss */
+.all .content .btnprint .print {
+  width: 200px;
+  height: 30px;
+}
 
 /*# sourceMappingURL=detail.css.map */
