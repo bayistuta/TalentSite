@@ -8808,7 +8808,7 @@ html {
 /* line 11, ../sass/all.scss */
 body {
   color: #504e4b;
-  font-family: "Helvetica Neue LT Std Medium";
+  font-family: "Helvetica Neue LT Std Medium", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100%;
