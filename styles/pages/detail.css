@@ -2,6 +2,10 @@
 .all .back {
   padding: 150px 0 0 15%;
 }
+/* line 5, ../../sass/pages/detail.scss */
+.all .back a {
+  color: black;
+}
 
 /* line 17, ../../sass/pages/detail.scss */
 .all .content {
@@ -10,7 +14,7 @@
 }
 /* line 21, ../../sass/pages/detail.scss */
 .all .content .centercontent .name {
-  font-size: 18px;
+  font: 18px/22px;
 }
 /* line 24, ../../sass/pages/detail.scss */
 .all .content .centercontent .detail {
