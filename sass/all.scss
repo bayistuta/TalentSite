@@ -1,1 +1,16 @@
 @import "plugins/bootstrap/bootstrap";
+@import "fonts";
+@import "variables";
+
+
+html {
+  height: 100%;
+}
+
+body {
+  color: $main_font_color;
+  font-family: $helvetica-medium;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100%;
+}
