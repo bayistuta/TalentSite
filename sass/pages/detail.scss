@@ -1,0 +1,58 @@
+
+.all {
+  .back {
+    padding: 150px 0 0 15%;
+    a {
+
+color: black;
+      font-size: 12px;
+    }
+  }
+
+}
+@mixin height {
+  color: black;
+  padding-bottom: 20px;
+}
+.all{
+  .content {
+    border-top: 1px solid gainsboro;
+    padding: 20px 15%;
+    .centercontent {
+      .name {
+        font: 18px/22px;
+      }
+      .detail {
+        color: darkgray;
+        line-height: 40px;
+        padding-top: 40px;
+        .lefts {
+          line-height: 20px;
+          .height {
+
+          }
+        }
+        .rights {
+          line-height: 20px;
+          .height {
+
+          }
+        }
+      }
+    }
+    .btnprint{
+      padding: 120px 0 0 5%;
+      a{
+        background-color: gainsboro;
+      }
+      :hover{
+        background-color: black;
+        color: white;
+      }
+      .print{
+        width: 200px;
+        height: 30px;
+      }
+    }
+  }
+}
