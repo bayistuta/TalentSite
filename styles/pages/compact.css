@@ -3300,19 +3300,18 @@ standard
 .left-content {
   display: table-cell;
   width: 150px;
-  padding-left: 3%;
-  padding-top: 50px;
+  padding-top: 40px;
 }
-/* line 36, ../../sass/pages/compact.scss */
+/* line 35, ../../sass/pages/compact.scss */
 .left-content .input-group {
   border-radius: 0;
   width: 150px;
 }
-/* line 39, ../../sass/pages/compact.scss */
+/* line 38, ../../sass/pages/compact.scss */
 .left-content .input-group .btnsearch {
   border-radius: 0;
 }
-/* line 43, ../../sass/pages/compact.scss */
+/* line 42, ../../sass/pages/compact.scss */
 .left-content .btn-block {
   margin: 15px 0;
   background-color: black;
@@ -3320,32 +3319,32 @@ standard
   border-radius: 0;
   font-size: 12px;
 }
-/* line 50, ../../sass/pages/compact.scss */
+/* line 49, ../../sass/pages/compact.scss */
 .left-content .selected {
   font-size: 14px;
   font-weight: bold;
   text-align: center;
 }
-/* line 55, ../../sass/pages/compact.scss */
+/* line 54, ../../sass/pages/compact.scss */
 .left-content .filters {
   padding: 10px 20px 0 0;
   font-size: 14px;
   font-weight: bold;
   text-align: right;
 }
-/* line 61, ../../sass/pages/compact.scss */
+/* line 60, ../../sass/pages/compact.scss */
 .left-content .line {
   padding: 7px 0;
   border-bottom: 1px solid gainsboro;
 }
-/* line 65, ../../sass/pages/compact.scss */
+/* line 64, ../../sass/pages/compact.scss */
 .left-content .side {
   line-height: 20px;
   text-align: right;
   color: gray;
 }
 
-/* line 71, ../../sass/pages/compact.scss */
+/* line 70, ../../sass/pages/compact.scss */
 .side dd a {
   text-decoration: none;
   color: gray;
@@ -3355,11 +3354,11 @@ standard
   color: gray;
 }
 
-/* line 76, ../../sass/pages/compact.scss */
+/* line 75, ../../sass/pages/compact.scss */
 .image-right {
   display: table-cell;
-  margin-left: 200px;
-  padding: 50px 5%;
+  padding-top: 40px;
+  padding-left: 7%;
 }
 
 /*# sourceMappingURL=compact.css.map */
