@@ -36,7 +36,7 @@
   width:150px;
   padding-top: 40px;
   @include  make-md-column(2);
-  @include  make-xs-column(6);
+
   .input-group{
     border-radius: 0;
     width: 100%;
@@ -76,26 +76,18 @@
         @include common-color-link(gray);
       }
     }
-      dt{
-        span{
-      font-weight: normal;
-          color:white;
-          background-color: grey;
-        }
-      }
     }
   }
 /**right-content begin*/
 .right-content{
+
   @include make-md-column(10);
-  @include  make-xs-column(6);
   display: table-cell;
   padding-top:40px;
-  padding-left: 3%;
 .image{
+  @include  make-xs-column(6);
+  @include  make-sm-column(3);
   @include  make-md-column(2);
-  @include  make-xs-column(12);
-  @include  make-sm-column(2);
 }
 }
 /**right-content end*/

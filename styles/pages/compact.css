@@ -3308,12 +3308,6 @@ standard
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  position: relative;
-  float: left;
-  width: 50%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 @media (min-width: 992px) {
   /* line 34, ../../sass/pages/compact.scss */
@@ -3375,46 +3369,33 @@ standard
 .left-content .side dd a :hover {
   color: gray;
 }
-/* line 80, ../../sass/pages/compact.scss */
-.left-content .side dt span {
-  font-weight: normal;
-  color: white;
-  background-color: grey;
-}
 
 /**right-content begin*/
-/* line 89, ../../sass/pages/compact.scss */
+/* line 82, ../../sass/pages/compact.scss */
 .right-content {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
+  display: table-cell;
+  padding-top: 40px;
+}
+@media (min-width: 992px) {
+  /* line 82, ../../sass/pages/compact.scss */
+  .right-content {
+    float: left;
+    width: 83.33333333%;
+  }
+}
+/* line 87, ../../sass/pages/compact.scss */
+.right-content .image {
   position: relative;
   float: left;
   width: 50%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-  display: table-cell;
-  padding-top: 40px;
-  padding-left: 3%;
-}
-@media (min-width: 992px) {
-  /* line 89, ../../sass/pages/compact.scss */
-  .right-content {
-    float: left;
-    width: 83.33333333%;
-  }
-}
-/* line 95, ../../sass/pages/compact.scss */
-.right-content .image {
   position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  float: left;
-  width: 100%;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
@@ -3422,16 +3403,16 @@ standard
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
-}
-@media (min-width: 992px) {
-  /* line 95, ../../sass/pages/compact.scss */
-  .right-content .image {
-    float: left;
-    width: 16.66666667%;
-  }
 }
 @media (min-width: 768px) {
-  /* line 95, ../../sass/pages/compact.scss */
+  /* line 87, ../../sass/pages/compact.scss */
+  .right-content .image {
+    float: left;
+    width: 25%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 87, ../../sass/pages/compact.scss */
   .right-content .image {
     float: left;
     width: 16.66666667%;
