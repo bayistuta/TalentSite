@@ -31,17 +31,20 @@
 /**section-search end*/
 
 /**lect-conten beign*/
+
+
 .left-content {
   display: table-cell;
   width:150px;
   padding-top: 40px;
   @include  make-md-column(2);
-
+  @include  make-xs-column(5);
   .input-group{
     border-radius: 0;
     width: 100%;
     .btnsearch{
       border-radius: 0;
+
     }
   }
   .btn-block{
@@ -81,14 +84,13 @@
 /**right-content begin*/
 .right-content{
   @include make-md-column(10);
+  @include  make-xs-column(7);
   display: table-cell;
   padding-top:40px;
 .image{
-  @include  make-xs-column(6);
+  @include  make-xs-column(12);
   @include  make-sm-column(3);
   @include  make-md-column(2);
 }
 }
 /**right-content end*/
-
-
