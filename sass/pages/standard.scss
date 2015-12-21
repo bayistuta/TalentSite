@@ -1,11 +1,10 @@
 @import "compass";
-@import "../pages/mixin/common";
 @import "../plugins/bootstrap/bootstrap/_variables.scss";
 @import "../plugins/bootstrap/bootstrap/mixins/_grid-framework.scss";
 @import "../plugins/bootstrap/bootstrap/mixins/_grid.scss";
 @import "../plugins/font-awesome/font-awesome.scss";
 
-/*serach section begin */
+/*search section begin */
 .section-search{
   .search-bar{
     padding:0 10%;
@@ -13,25 +12,7 @@
     line-height:30px;
     overflow:hidden;
     background-color:#f6f6f6;
-    ul{
-      li{
-        @include inline-block;
-        @include reset-list-style;
-        margin-left:7px;
-        a{
-          color: black;
-          &.inactive{
-            @include opacity(0.5);
-            &:hover{
-              @include opacity(1);
-            }
-          }
-          i{
-            margin-right:3px;
-          }
-        }
-      }
-    }
+
   }
   .search-filter-head{
     padding:10px 10%;
@@ -42,7 +23,6 @@
       line-height:30px;
       text-transform:uppercase;
       @include hover-link;
-    color: black;
     }
     .input-group{
       width:300px;
@@ -61,17 +41,12 @@
       @include make-md-column(3);
     }
     .submit{
-
       @include make-xs-column(6);
       @include make-xs-column-offset(6);
       @include make-sm-column(4);
       @include make-sm-column-offset(8);
       @include make-md-column-offset(9);
       @include make-md-column(3);
-      a{
-        border-radius: 0;
-      background-color: black;
-      }
     }
   }
 }

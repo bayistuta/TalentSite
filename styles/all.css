@@ -1736,12 +1736,12 @@ textarea {
 
 /* line 48, ../sass/plugins/bootstrap/bootstrap/_scaffolding.scss */
 a {
-  color: #337ab7;
+  color: #1c1d1e;
   text-decoration: none;
 }
 /* line 52, ../sass/plugins/bootstrap/bootstrap/_scaffolding.scss */
 a:hover, a:focus {
-  color: #23527c;
+  color: black;
   text-decoration: underline;
 }
 /* line 58, ../sass/plugins/bootstrap/bootstrap/_scaffolding.scss */
@@ -2005,13 +2005,13 @@ mark,
 
 /* line 5, ../sass/plugins/bootstrap/bootstrap/mixins/_text-emphasis.scss */
 .text-primary {
-  color: #337ab7;
+  color: #1c1d1e;
 }
 
 /* line 8, ../sass/plugins/bootstrap/bootstrap/mixins/_text-emphasis.scss */
 a.text-primary:hover,
 a.text-primary:focus {
-  color: #286090;
+  color: #030304;
 }
 
 /* line 5, ../sass/plugins/bootstrap/bootstrap/mixins/_text-emphasis.scss */
@@ -2065,13 +2065,13 @@ a.text-danger:focus {
 
 /* line 5, ../sass/plugins/bootstrap/bootstrap/mixins/_background-variant.scss */
 .bg-primary {
-  background-color: #337ab7;
+  background-color: #1c1d1e;
 }
 
 /* line 8, ../sass/plugins/bootstrap/bootstrap/mixins/_background-variant.scss */
 a.bg-primary:hover,
 a.bg-primary:focus {
-  background-color: #286090;
+  background-color: #030304;
 }
 
 /* line 5, ../sass/plugins/bootstrap/bootstrap/mixins/_background-variant.scss */
@@ -4511,32 +4511,32 @@ a.btn.disabled, fieldset[disabled] a.btn {
 /* line 71, ../sass/plugins/bootstrap/bootstrap/_buttons.scss */
 .btn-primary {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #1c1d1e;
+  border-color: #101011;
 }
 /* line 11, ../sass/plugins/bootstrap/bootstrap/mixins/_buttons.scss */
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
-  background-color: #286090;
-  border-color: #122b40;
+  background-color: #030304;
+  border-color: black;
 }
 /* line 17, ../sass/plugins/bootstrap/bootstrap/mixins/_buttons.scss */
 .btn-primary:hover {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #030304;
+  border-color: black;
 }
 /* line 22, ../sass/plugins/bootstrap/bootstrap/mixins/_buttons.scss */
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #286090;
-  border-color: #204d74;
+  background-color: #030304;
+  border-color: black;
 }
 /* line 29, ../sass/plugins/bootstrap/bootstrap/mixins/_buttons.scss */
 .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
   color: #fff;
-  background-color: #204d74;
-  border-color: #122b40;
+  background-color: black;
+  border-color: black;
 }
 /* line 37, ../sass/plugins/bootstrap/bootstrap/mixins/_buttons.scss */
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
@@ -4544,12 +4544,12 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 /* line 45, ../sass/plugins/bootstrap/bootstrap/mixins/_buttons.scss */
 .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
-  background-color: #337ab7;
-  border-color: #2e6da4;
+  background-color: #1c1d1e;
+  border-color: #101011;
 }
 /* line 56, ../sass/plugins/bootstrap/bootstrap/mixins/_buttons.scss */
 .btn-primary .badge {
-  color: #337ab7;
+  color: #1c1d1e;
   background-color: #fff;
 }
 
@@ -4735,7 +4735,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 /* line 96, ../sass/plugins/bootstrap/bootstrap/_buttons.scss */
 .btn-link {
-  color: #337ab7;
+  color: #1c1d1e;
   font-weight: normal;
   border-radius: 0;
 }
@@ -4751,7 +4751,7 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 /* line 115, ../sass/plugins/bootstrap/bootstrap/_buttons.scss */
 .btn-link:hover, .btn-link:focus {
-  color: #23527c;
+  color: black;
   text-decoration: underline;
   background-color: transparent;
 }
@@ -4928,7 +4928,7 @@ tbody.collapse.in {
   color: #fff;
   text-decoration: none;
   outline: 0;
-  background-color: #337ab7;
+  background-color: #1c1d1e;
 }
 
 /* line 103, ../sass/plugins/bootstrap/bootstrap/_dropdowns.scss */
@@ -5449,7 +5449,7 @@ tbody.collapse.in {
 /* line 46, ../sass/plugins/bootstrap/bootstrap/_navs.scss */
 .nav .open > a, .nav .open > a:hover, .nav .open > a:focus {
   background-color: #eeeeee;
-  border-color: #337ab7;
+  border-color: #1c1d1e;
 }
 /* line 59, ../sass/plugins/bootstrap/bootstrap/_navs.scss */
 .nav .nav-divider {
@@ -5507,7 +5507,7 @@ tbody.collapse.in {
 /* line 131, ../sass/plugins/bootstrap/bootstrap/_navs.scss */
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #337ab7;
+  background-color: #1c1d1e;
 }
 
 /* line 144, ../sass/plugins/bootstrap/bootstrap/_navs.scss */
@@ -6279,7 +6279,7 @@ tbody.collapse.in {
   padding: 6px 12px;
   line-height: 1.42857143;
   text-decoration: none;
-  color: #337ab7;
+  color: #1c1d1e;
   background-color: #fff;
   border: 1px solid #ddd;
   margin-left: -1px;
@@ -6302,7 +6302,7 @@ tbody.collapse.in {
 .pagination > li > span:hover,
 .pagination > li > span:focus {
   z-index: 3;
-  color: #23527c;
+  color: black;
   background-color: #eeeeee;
   border-color: #ddd;
 }
@@ -6313,8 +6313,8 @@ tbody.collapse.in {
 .pagination > .active > span:focus {
   z-index: 2;
   color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #1c1d1e;
+  border-color: #1c1d1e;
   cursor: default;
 }
 /* line 64, ../sass/plugins/bootstrap/bootstrap/_pagination.scss */
@@ -6466,11 +6466,11 @@ a.label:hover, a.label:focus {
 
 /* line 48, ../sass/plugins/bootstrap/bootstrap/_labels.scss */
 .label-primary {
-  background-color: #337ab7;
+  background-color: #1c1d1e;
 }
 /* line 7, ../sass/plugins/bootstrap/bootstrap/mixins/_labels.scss */
 .label-primary[href]:hover, .label-primary[href]:focus {
-  background-color: #286090;
+  background-color: #030304;
 }
 
 /* line 52, ../sass/plugins/bootstrap/bootstrap/_labels.scss */
@@ -6540,7 +6540,7 @@ a.label:hover, a.label:focus {
 }
 /* line 41, ../sass/plugins/bootstrap/bootstrap/_badges.scss */
 .list-group-item.active > .badge, .nav-pills > .active > a > .badge {
-  color: #337ab7;
+  color: #1c1d1e;
   background-color: #fff;
 }
 /* line 47, ../sass/plugins/bootstrap/bootstrap/_badges.scss */
@@ -6644,7 +6644,7 @@ a.badge:hover, a.badge:focus {
 a.thumbnail:hover,
 a.thumbnail:focus,
 a.thumbnail.active {
-  border-color: #337ab7;
+  border-color: #1c1d1e;
 }
 
 /* line 9, ../sass/plugins/bootstrap/bootstrap/_alerts.scss */
@@ -6783,7 +6783,7 @@ a.thumbnail.active {
   line-height: 20px;
   color: #fff;
   text-align: center;
-  background-color: #337ab7;
+  background-color: #1c1d1e;
   -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
   -webkit-transition: width 0.6s ease;
@@ -6994,8 +6994,8 @@ button.list-group-item {
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
   z-index: 2;
   color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #1c1d1e;
+  border-color: #1c1d1e;
 }
 /* line 96, ../sass/plugins/bootstrap/bootstrap/_list-group.scss */
 .list-group-item.active .list-group-item-heading,
@@ -7009,7 +7009,7 @@ button.list-group-item {
 }
 /* line 101, ../sass/plugins/bootstrap/bootstrap/_list-group.scss */
 .list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
-  color: #c7ddef;
+  color: #7f8487;
 }
 
 /* line 4, ../sass/plugins/bootstrap/bootstrap/mixins/_list-group.scss */
@@ -7475,26 +7475,26 @@ button.list-group-item-danger.active:focus {
 
 /* line 257, ../sass/plugins/bootstrap/bootstrap/_panels.scss */
 .panel-primary {
-  border-color: #337ab7;
+  border-color: #1c1d1e;
 }
 /* line 6, ../sass/plugins/bootstrap/bootstrap/mixins/_panels.scss */
 .panel-primary > .panel-heading {
   color: #fff;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: #1c1d1e;
+  border-color: #1c1d1e;
 }
 /* line 11, ../sass/plugins/bootstrap/bootstrap/mixins/_panels.scss */
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-  border-top-color: #337ab7;
+  border-top-color: #1c1d1e;
 }
 /* line 14, ../sass/plugins/bootstrap/bootstrap/mixins/_panels.scss */
 .panel-primary > .panel-heading .badge {
-  color: #337ab7;
+  color: #1c1d1e;
   background-color: #fff;
 }
 /* line 20, ../sass/plugins/bootstrap/bootstrap/mixins/_panels.scss */
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
-  border-bottom-color: #337ab7;
+  border-bottom-color: #1c1d1e;
 }
 
 /* line 260, ../sass/plugins/bootstrap/bootstrap/_panels.scss */
@@ -8769,6 +8769,21 @@ button.close {
     display: none !important;
   }
 }
+/* line 3, ../sass/bootstrap_override.scss */
+.btn {
+  -moz-border-radius: 0 / 0;
+  -webkit-border-radius: 0 0;
+  border-radius: 0 / 0;
+  outline: none;
+}
+
+/* line 8, ../sass/bootstrap_override.scss */
+.form-control {
+  -moz-border-radius: 0 / 0;
+  -webkit-border-radius: 0 0;
+  border-radius: 0 / 0;
+}
+
 @font-face {
   font-family: Helvetica Neue LT Std Medium;
   src: url(../fonts/helvetica-neue-65-medium.ttf) format("truetype");
@@ -8785,14 +8800,15 @@ button.close {
   font-family: Helvetica Neue LT Std Bold;
   src: url(../fonts/helvetica-neue-75-bold.otf);
 }
-/* line 6, ../sass/all.scss */
+/* line 7, ../sass/all.scss */
 html {
   height: 100%;
 }
 
-/* line 10, ../sass/all.scss */
+/* line 11, ../sass/all.scss */
 body {
   color: #504e4b;
+  font: 12px/24px Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   min-height: 100%;

@@ -1,7 +1,4 @@
 @charset "UTF-8";
-/**
-standard
-*/
 /*!
  *  Font Awesome 4.4.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
@@ -3259,8 +3256,8 @@ standard
   content: "";
 }
 
-/*serach section begin */
-/* line 10, ../../sass/pages/standard.scss */
+/*serch section begin */
+/* line 9, ../../sass/pages/standard.scss */
 .section-search .search-bar {
   padding: 0 10%;
   height: 30px;
@@ -3269,66 +3266,37 @@ standard
   background-color: #f6f6f6;
 }
 /* line 17, ../../sass/pages/standard.scss */
-.section-search .search-bar ul li {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  list-style: none;
-  margin-left: 7px;
-}
-/* line 21, ../../sass/pages/standard.scss */
-.section-search .search-bar ul li a {
-  color: black;
-}
-/* line 23, ../../sass/pages/standard.scss */
-.section-search .search-bar ul li a.inactive {
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
-  opacity: 0.5;
-}
-/* line 25, ../../sass/pages/standard.scss */
-.section-search .search-bar ul li a.inactive:hover {
-  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
-  opacity: 1;
-}
-/* line 29, ../../sass/pages/standard.scss */
-.section-search .search-bar ul li a i {
-  margin-right: 3px;
-}
-/* line 36, ../../sass/pages/standard.scss */
 .section-search .search-filter-head {
   padding: 10px 10%;
   overflow: hidden;
   border-bottom: solid 1px #efefef;
 }
-/* line 40, ../../sass/pages/standard.scss */
+/* line 21, ../../sass/pages/standard.scss */
 .section-search .search-filter-head a:first-child {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
 }
-/* line 4, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, C:/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_hover-link.scss */
 .section-search .search-filter-head a:first-child:hover, .section-search .search-filter-head a:first-child:focus {
   text-decoration: underline;
 }
-/* line 47, ../../sass/pages/standard.scss */
+/* line 27, ../../sass/pages/standard.scss */
 .section-search .search-filter-head .input-group {
   width: 300px;
 }
 @media (max-width: 768px) {
-  /* line 47, ../../sass/pages/standard.scss */
+  /* line 27, ../../sass/pages/standard.scss */
   .section-search .search-filter-head .input-group {
     width: 50%;
   }
 }
-/* line 55, ../../sass/pages/standard.scss */
+/* line 35, ../../sass/pages/standard.scss */
 .section-search .search-filters {
   padding: 10px 10%;
 }
-/* line 57, ../../sass/pages/standard.scss */
+/* line 37, ../../sass/pages/standard.scss */
 .section-search .search-filters .filter {
   margin-bottom: 5px;
   position: relative;
@@ -3347,20 +3315,20 @@ standard
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  /* line 57, ../../sass/pages/standard.scss */
+  /* line 37, ../../sass/pages/standard.scss */
   .section-search .search-filters .filter {
     float: left;
     width: 33.33333333%;
   }
 }
 @media (min-width: 992px) {
-  /* line 57, ../../sass/pages/standard.scss */
+  /* line 37, ../../sass/pages/standard.scss */
   .section-search .search-filters .filter {
     float: left;
     width: 25%;
   }
 }
-/* line 63, ../../sass/pages/standard.scss */
+/* line 43, ../../sass/pages/standard.scss */
 .section-search .search-filters .submit {
   position: relative;
   float: left;
@@ -3379,44 +3347,39 @@ standard
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  /* line 63, ../../sass/pages/standard.scss */
+  /* line 43, ../../sass/pages/standard.scss */
   .section-search .search-filters .submit {
     float: left;
     width: 33.33333333%;
   }
 }
 @media (min-width: 768px) {
-  /* line 63, ../../sass/pages/standard.scss */
+  /* line 43, ../../sass/pages/standard.scss */
   .section-search .search-filters .submit {
     margin-left: 66.66666667%;
   }
 }
 @media (min-width: 992px) {
-  /* line 63, ../../sass/pages/standard.scss */
+  /* line 43, ../../sass/pages/standard.scss */
   .section-search .search-filters .submit {
     margin-left: 75%;
   }
 }
 @media (min-width: 992px) {
-  /* line 63, ../../sass/pages/standard.scss */
+  /* line 43, ../../sass/pages/standard.scss */
   .section-search .search-filters .submit {
     float: left;
     width: 25%;
   }
 }
-/* line 71, ../../sass/pages/standard.scss */
-.section-search .search-filters .submit a {
-  border-radius: 0;
-  background-color: black;
-}
 
 /*search section end*/
 /* gallery begin */
-/* line 81, ../../sass/pages/standard.scss */
+/* line 56, ../../sass/pages/standard.scss */
 .section-list {
   padding: 20px 5%;
 }
-/* line 83, ../../sass/pages/standard.scss */
+/* line 58, ../../sass/pages/standard.scss */
 .section-list .image {
   margin-bottom: 15px;
   display: inline-block;
@@ -3440,20 +3403,20 @@ standard
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  /* line 83, ../../sass/pages/standard.scss */
+  /* line 58, ../../sass/pages/standard.scss */
   .section-list .image {
     float: left;
     width: 33.33333333%;
   }
 }
 @media (min-width: 992px) {
-  /* line 83, ../../sass/pages/standard.scss */
+  /* line 58, ../../sass/pages/standard.scss */
   .section-list .image {
     float: left;
     width: 25%;
   }
 }
-/* line 89, ../../sass/pages/standard.scss */
+/* line 64, ../../sass/pages/standard.scss */
 .section-list .image span {
   margin-top: 3px;
   display: inline-block;
