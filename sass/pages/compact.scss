@@ -80,7 +80,6 @@
   }
 /**right-content begin*/
 .right-content{
-
   @include make-md-column(10);
   display: table-cell;
   padding-top:40px;

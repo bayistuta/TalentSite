@@ -3387,7 +3387,7 @@ standard
     width: 83.33333333%;
   }
 }
-/* line 87, ../../sass/pages/compact.scss */
+/* line 86, ../../sass/pages/compact.scss */
 .right-content .image {
   position: relative;
   float: left;
@@ -3405,14 +3405,14 @@ standard
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  /* line 87, ../../sass/pages/compact.scss */
+  /* line 86, ../../sass/pages/compact.scss */
   .right-content .image {
     float: left;
     width: 25%;
   }
 }
 @media (min-width: 992px) {
-  /* line 87, ../../sass/pages/compact.scss */
+  /* line 86, ../../sass/pages/compact.scss */
   .right-content .image {
     float: left;
     width: 16.66666667%;
