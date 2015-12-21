@@ -85,3 +85,20 @@
     }
   }
 }
+/*credit-resume*/
+.credit-resume{
+  table {
+    @include box-shadow(0 4px 2px -2px gray);
+    thead {
+      tr {
+        background-color: #e0e0e0;
+      }
+    }
+    tbody {
+      td, th {
+        border-left: none;
+        border-right: none;
+      }
+    }
+  }
+}
