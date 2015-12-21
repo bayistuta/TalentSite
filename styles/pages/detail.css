@@ -3410,4 +3410,21 @@
   }
 }
 
+/*credit-resume*/
+/* line 90, ../../sass/pages/detail.scss */
+.credit-resume table {
+  -moz-box-shadow: 0 4px 2px -2px gray;
+  -webkit-box-shadow: 0 4px 2px -2px gray;
+  box-shadow: 0 4px 2px -2px gray;
+}
+/* line 93, ../../sass/pages/detail.scss */
+.credit-resume table thead tr {
+  background-color: #e0e0e0;
+}
+/* line 98, ../../sass/pages/detail.scss */
+.credit-resume table tbody td, .credit-resume table tbody th {
+  border-left: none;
+  border-right: none;
+}
+
 /*# sourceMappingURL=detail.css.map */
