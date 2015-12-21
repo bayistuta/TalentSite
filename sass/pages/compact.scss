@@ -1,0 +1,82 @@
+@import "compass";
+@import "../pages/mixin/common";
+@import "../plugins/bootstrap/bootstrap/_variables.scss";
+@import "../plugins/bootstrap/bootstrap/mixins/_grid-framework.scss";
+@import "../plugins/bootstrap/bootstrap/mixins/_grid.scss";
+@import "../plugins/font-awesome/font-awesome.scss";
+
+.talent-content{
+  margin-top: 150px;
+}
+.section-search {
+  .search-bar {
+    padding: 0 10%;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    background-color: #f6f6f6;
+    ul {
+      li {
+        @include inline-block;
+        @include reset-list-style;
+        margin-left: 7px;
+        a {
+          @include common-color-link(#000);
+          @include a-none;
+        }
+      }
+    }
+  }
+}
+.left-content {
+  display: table-cell;
+  width:150px;
+  padding-left:3%;
+  padding-top: 50px;
+  .input-group{
+    border-radius: 0;
+    width: 150px;
+    .btnsearch{
+      border-radius: 0;
+    }
+  }
+  .btn-block{
+    margin:15px 0;
+    background-color: black;
+    width: 150px;
+    border-radius: 0;
+    font-size: 12px;
+  }
+  .selected{
+    font-size: 14px;
+    font-weight: bold;
+  text-align: center;
+  }
+  .filters{
+    padding: 10px 20px 0 0;
+    font-size: 14px;
+    font-weight: bold;
+text-align: right;
+  }
+  .line{
+    padding: 7px 0;
+    border-bottom: 1px solid gainsboro;
+  }
+    .side {
+      line-height: 20px;
+      text-align: right;
+      color: gray;
+    }
+  }
+  .side dd a {
+    text-decoration: none;
+    @include common-color-link(gray);
+  }
+
+.image-right{
+  display: table-cell;
+  margin-left: 200px;
+  padding:50px 5%;
+}
+
+

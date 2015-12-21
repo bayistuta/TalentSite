@@ -1,0 +1,49 @@
+/**
+standard
+*/
+@mixin common-color-link($color){
+  color: $color;
+  :hover{
+    color: $color;
+  }
+}
+@mixin a-link($color){
+  text-decoration: underline;
+  color:$color;
+  :hover{
+    text-decoration: underline;
+    color: $color;
+  }
+}
+@mixin  a-none{
+  text-decoration: none;
+  :hover{
+    text-decoration: none;
+  }
+}
+//detail
+@mixin height {
+  color: black;
+  padding-bottom: 20px;
+}
+@mixin  a-font {
+  font-size: 12px;
+}
+
+//compact
+@mixin selected-filters{
+  padding-top: 10px;
+  font-size: 12px;
+
+}
+@mixin side-dd-a{
+  text-decoration: none;
+  color:gray;
+  text-align: right;
+}
+@mixin  three-bold{
+  font-weight: bold;
+}
+@mixin gray-color{
+  color:gray;
+}
