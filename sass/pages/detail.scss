@@ -1,14 +1,17 @@
-
+@import "compass";
+@import "../pages/mixin/common";
+@import "../plugins/bootstrap/bootstrap/_variables.scss";
+@import "../plugins/bootstrap/bootstrap/mixins/_grid-framework.scss";
+@import "../plugins/bootstrap/bootstrap/mixins/_grid.scss";
+@import "../plugins/font-awesome/font-awesome.scss";
 .all {
   .back {
     padding: 150px 0 0 15%;
     a {
-
-color: black;
+     @include common-color-link(#000);
       font-size: 12px;
     }
   }
-
 }
 @mixin height {
   color: black;
@@ -20,7 +23,7 @@ color: black;
     padding: 20px 15%;
     .centercontent {
       .name {
-        font: 18px/22px;
+    font:18/22px;
       }
       .detail {
         color: darkgray;
@@ -29,13 +32,13 @@ color: black;
         .lefts {
           line-height: 20px;
           .height {
-
+           @include height;
           }
         }
         .rights {
           line-height: 20px;
           .height {
-
+          @include  height;
           }
         }
       }
@@ -43,7 +46,7 @@ color: black;
     .btnprint{
       padding: 120px 0 0 5%;
       a{
-        background-color: gainsboro;
+        background-color: #f6f6f6;
       }
       :hover{
         background-color: black;
@@ -52,6 +55,7 @@ color: black;
       .print{
         width: 200px;
         height: 30px;
+        border-radius: 0;
       }
     }
   }
