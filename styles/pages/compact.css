@@ -3347,7 +3347,7 @@ standard
 }
 /* line 62, ../../sass/pages/compact.scss */
 .left-content .filters {
-  padding: 10px 20px 0 0;
+  padding-right: 20px;
   font-size: 14px;
   font-weight: bold;
   text-align: right;
@@ -3358,15 +3358,20 @@ standard
   text-align: right;
   color: gray;
 }
-/* line 72, ../../sass/pages/compact.scss */
+/* line 73, ../../sass/pages/compact.scss */
+.left-content .side dt a {
+  text-decoration: none;
+  color: gray;
+}
+/* line 78, ../../sass/pages/compact.scss */
 .left-content .side dd {
   padding-right: 10px;
 }
-/* line 74, ../../sass/pages/compact.scss */
+/* line 80, ../../sass/pages/compact.scss */
 .left-content .side dd .all {
   color: #000;
 }
-/* line 77, ../../sass/pages/compact.scss */
+/* line 83, ../../sass/pages/compact.scss */
 .left-content .side dd a {
   text-decoration: none;
   color: gray;
@@ -3377,7 +3382,7 @@ standard
 }
 
 /**right-content begin*/
-/* line 85, ../../sass/pages/compact.scss */
+/* line 92, ../../sass/pages/compact.scss */
 .right-content {
   position: relative;
   min-height: 1px;
@@ -3393,13 +3398,13 @@ standard
   padding-top: 40px;
 }
 @media (min-width: 992px) {
-  /* line 85, ../../sass/pages/compact.scss */
+  /* line 92, ../../sass/pages/compact.scss */
   .right-content {
     float: left;
     width: 83.33333333%;
   }
 }
-/* line 90, ../../sass/pages/compact.scss */
+/* line 97, ../../sass/pages/compact.scss */
 .right-content .image {
   position: relative;
   float: left;
@@ -3417,14 +3422,14 @@ standard
   padding-right: 15px;
 }
 @media (min-width: 768px) {
-  /* line 90, ../../sass/pages/compact.scss */
+  /* line 97, ../../sass/pages/compact.scss */
   .right-content .image {
     float: left;
     width: 25%;
   }
 }
 @media (min-width: 992px) {
-  /* line 90, ../../sass/pages/compact.scss */
+  /* line 97, ../../sass/pages/compact.scss */
   .right-content .image {
     float: left;
     width: 16.66666667%;

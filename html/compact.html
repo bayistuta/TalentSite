@@ -12,7 +12,24 @@
     <script src="../js/jquery-1.9.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery-ui.min.js"></script>
+<script type="text/javascript">
+jQuery(".sign-at").ready(function () {
+    var sign=jQuery(".sign-at");
+    var minus=new Array("#minus","#minus1","#minus2","#minus3","#minus4","#minus5");
+    var plus=new Array("#plus","#plus1","#plus2","#plus3","#plus4","#plus5");
+    jQuery(sign).hover(function(){
+                jQuery(this).css("color","black");
+        },
+        function(){
+            jQuery(this).css("color","gray");
+        });
+                    jQuery(".sign-at").click(function () {
+                        jQuery("dd").hide("slow", function () {
+                        });
+                    })
+})
 
+</script>
 </head>
 <body>
 <header class="">
@@ -56,12 +73,18 @@
             <div class= "filters">FILTERS</div>
 
             <dl class="side ">
-                <dt>GENDER&nbsp;&nbsp;<span class="icon-plus-sign-alt"></span></dt>
+                <dt>GENDER&nbsp;&nbsp;&nbsp;<a href="#"class="sign-at" >
+                    <span class=" icon-minus-sign-alt" id="minus"></span>
+                    <span class=" icon-plus-sign-alt" id="plus"></span>
+                </a></dt>
                 <dd><a href="#" >Men</a></dd>
                 <dd><a href="#" >Women</a></dd>
             </dl>
             <dl class="side ">
-                <dt>REGION&nbsp;&nbsp;<span class="icon-plus-sign-alt"></span></dt>
+                <dt>REGION&nbsp;&nbsp;&nbsp;<a href="#"class="sign-at" >
+                    <span class="icon-minus-sign-alt" id="minus1"></span>
+                    <span class=" icon-plus-sign-alt" id="plus1"></span>
+                </a></dt>
                 <dd><a class="all active">All</a></dd>
                 <dd><a href="#" >NSW</a></dd>
                 <dd><a href="#" >QLD</a></dd>
@@ -69,7 +92,10 @@
 
             </dl>
             <dl class="side">
-                <dt>TYPE&nbsp;&nbsp;<span class="icon-plus-sign-alt"></span></dt>
+                <dt>TYPE&nbsp;&nbsp;&nbsp;<a href="#"class="sign-at" >
+                    <span class="icon-minus-sign-alt" id="minus2"></span>
+                    <span class=" icon-plus-sign-alt" id="plus2"></span>
+                </a></dt>
                 <dd><a class="all active">All</a></dd>
                 <dd><a href="#" >Actor</a></dd>
                 <dd><a href="#" >Dancer</a></dd>
@@ -80,15 +106,20 @@
                 <dd><a href="#" >Dancer</a></dd>
                 <dd><a href="#" >Dancer</a></dd>
                 <dd><a href="#" >Dancer</a></dd>
-
             </dl>
             <dl class="side">
-                <dt>DEPARTMENT &nbsp;&nbsp;<span class="icon-plus-sign-alt"></span></dt>
+                <dt>DEPARTMENT &nbsp;&nbsp;&nbsp;<a href="#"class="sign-at" >
+                    <span class="icon-minus-sign-alt" id="minus3"></span>
+                    <span class=" icon-plus-sign-alt" id="plus3"></span>
+                </a></dt>
                 <dd><a class="all active">All</a></dd>
                 <dd><a href="#" ></a></dd>
             </dl>
             <dl class="side">
-                <dt>ETHNICITY&nbsp;&nbsp;<span class="icon-plus-sign-alt"></span></dt>
+                <dt>ETHNICITY&nbsp;&nbsp;&nbsp;<a href="#"class="sign-at" >
+                    <span class="icon-minus-sign-alt" id="minus4"></span>
+                    <span class=" icon-plus-sign-alt" id="plus4"></span>
+                </a></dt>
                 <dd><a class="all active">All</a></dd>
                 <dd><a href="#" >Asian</a></dd>
                 <dd><a href="#" >Europen</a></dd>
@@ -97,7 +128,10 @@
 
             </dl>
             <dl class="side">
-                <dt>AGE&nbsp;&nbsp;<span class="icon-plus-sign-alt"></span></dt>
+                <dt>AGE&nbsp;&nbsp;&nbsp;<a href="#"class="sign-at" >
+                    <span class="icon-minus-sign-alt" id="minus5"></span>
+                    <span class=" icon-plus-sign-alt" id="plus5"></span>
+                </a></dt>
                 <dd><a class="all active">All</a></dd>
                 <dd><a href="#" >16-20</a></dd>
                 <dd><a href="#" >21-30</a></dd>
