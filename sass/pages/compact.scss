@@ -15,89 +15,63 @@
     line-height: 30px;
     overflow: hidden;
     background-color: #f6f6f6;
-    ul {
-      li {
-        @include inline-block;
-        @include reset-list-style;
-        margin-left: 7px;
-        a {
-          @include common-color-link(#000);
-          @include a-none;
-        }
-      }
-    }
   }
 }
 /**section-search end*/
-
-/**lect-conten beign*/
-
-
-.left-content {
-  display: table-cell;
-  width:150px;
-  padding-top: 40px;
-  @include  make-md-column(2);
-  @include  make-xs-column(5);
-  .input-group{
-    border-radius: 0;
-    width: 100%;
-    .btnsearch{
-      border-radius: 0;
-
+.section-content{
+  padding: 20px 10% 0px;
+  display:table;
+  text-align: right;
+  .section-filter{
+    display: table-cell;
+    width: 200px;
+    padding-right:40px;
+    @media(max-width: 320px){
+      width: 120px;
+      padding-right: 10px;
     }
-  }
-  .btn-block{
-    margin:15px 0;
-    background-color: black;
-    width: 100%;
-    border-radius: 0;
-    font-size: 12px;
-  }
-  .selected{
-    font-size: 14px;
-    font-weight: bold;
-  text-align: center;
-  }
-  .filters{
-    padding-right: 20px;
-    font-size: 14px;
-    font-weight: bold;
-    text-align: right;
-  }
-    .side {
-      line-height: 20px;
-      text-align: right;
-      color: gray;
+    .btn-search{
+      margin-top: 10px;
+    }
+    h6{
+      font-weight: bold;
+      line-height: 14px;
+    }
+    dl{
       dt{
-        a{
-          text-decoration: none;
-          color: gray;
+        font-weight: normal;
+        a span{
+          @extend .fa;
+          @extend .fa-minus-square;
+          position: absolute;
+          right: -15px;
+          top: 1px;
         }
       }
-    dd {
-      padding-right: 10px;
-      .all {
-        color: #000;
+      a{
+        @include unstyled-link();
+        @include link-colors(#999,#000);
+        cursor: pointer;
+        position: relative;
       }
-      a {
-        text-decoration: none;
-        @include common-color-link(gray);
+      &.filter-collapse{
+        dt a span{
+          @extend .fa-plus-square;
+        }
+        dd a{
+          display: none;
+        }
       }
-
     }
+
+  }
+  .section-thumbs{
+    display: table-cell;
+    text-align: left;
+    .image{
+      @include make-xs-column(12);
+      @include make-sm-column(3);
+      @include make-md-column(2,10px);
     }
   }
-/**right-content begin*/
-.right-content{
-  @include make-md-column(10);
-  @include  make-xs-column(7);
-  display: table-cell;
-  padding-top:40px;
-.image{
-  @include  make-xs-column(12);
-  @include  make-sm-column(3);
-  @include  make-md-column(2);
 }
-}
-/**right-content end*/

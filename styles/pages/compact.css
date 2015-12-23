@@ -16,7 +16,7 @@ standard
   font-style: normal;
 }
 /* line 4, ../../sass/plugins/font-awesome/_core.scss */
-.fa {
+.fa, .section-content .section-filter dl dt a span {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -101,11 +101,11 @@ standard
 }
 
 /* line 14, ../../sass/plugins/font-awesome/_bordered-pulled.scss */
-.fa.fa-pull-left {
+.fa.fa-pull-left, .section-content .section-filter dl dt a span.fa-pull-left {
   margin-right: .3em;
 }
 /* line 15, ../../sass/plugins/font-awesome/_bordered-pulled.scss */
-.fa.fa-pull-right {
+.fa.fa-pull-right, .section-content .section-filter dl dt a span.fa-pull-right {
   margin-left: .3em;
 }
 
@@ -121,11 +121,11 @@ standard
 }
 
 /* line 23, ../../sass/plugins/font-awesome/_bordered-pulled.scss */
-.fa.pull-left {
+.fa.pull-left, .section-content .section-filter dl dt a span.pull-left {
   margin-right: .3em;
 }
 /* line 24, ../../sass/plugins/font-awesome/_bordered-pulled.scss */
-.fa.pull-right {
+.fa.pull-right, .section-content .section-filter dl dt a span.pull-right {
   margin-left: .3em;
 }
 
@@ -1410,7 +1410,7 @@ standard
 }
 
 /* line 260, ../../sass/plugins/font-awesome/_icons.scss */
-.fa-plus-square:before {
+.fa-plus-square:before, .section-content .section-filter dl.filter-collapse dt a span:before {
   content: "";
 }
 
@@ -1741,7 +1741,7 @@ standard
 }
 
 /* line 331, ../../sass/plugins/font-awesome/_icons.scss */
-.fa-minus-square:before {
+.fa-minus-square:before, .section-content .section-filter dl dt a span:before {
   content: "";
 }
 
@@ -3273,139 +3273,74 @@ standard
   overflow: hidden;
   background-color: #f6f6f6;
 }
-/* line 19, ../../sass/pages/compact.scss */
-.section-search .search-bar ul li {
-  display: inline-block;
-  vertical-align: middle;
-  *vertical-align: auto;
-  *zoom: 1;
-  *display: inline;
-  list-style: none;
-  margin-left: 7px;
-}
-/* line 23, ../../sass/pages/compact.scss */
-.section-search .search-bar ul li a {
-  color: #000;
-  text-decoration: none;
-}
-/* line 6, ../../sass/pages/mixin/common.scss */
-.section-search .search-bar ul li a :hover {
-  color: #000;
-}
-/* line 20, ../../sass/pages/mixin/common.scss */
-.section-search .search-bar ul li a :hover {
-  text-decoration: none;
-}
 
 /**section-search end*/
-/**lect-conten beign*/
-/* line 36, ../../sass/pages/compact.scss */
-.left-content {
-  display: table-cell;
-  width: 150px;
-  padding-top: 40px;
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  float: left;
-  width: 41.66666667%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+/* line 21, ../../sass/pages/compact.scss */
+.section-content {
+  padding: 20px 10% 0px;
+  display: table;
+  text-align: right;
 }
-@media (min-width: 992px) {
-  /* line 36, ../../sass/pages/compact.scss */
-  .left-content {
-    float: left;
-    width: 16.66666667%;
+/* line 25, ../../sass/pages/compact.scss */
+.section-content .section-filter {
+  display: table-cell;
+  width: 200px;
+  padding-right: 40px;
+}
+@media (max-width: 320px) {
+  /* line 25, ../../sass/pages/compact.scss */
+  .section-content .section-filter {
+    width: 120px;
+    padding-right: 10px;
   }
 }
-/* line 42, ../../sass/pages/compact.scss */
-.left-content .input-group {
-  border-radius: 0;
-  width: 100%;
+/* line 33, ../../sass/pages/compact.scss */
+.section-content .section-filter .btn-search {
+  margin-top: 10px;
 }
-/* line 45, ../../sass/pages/compact.scss */
-.left-content .input-group .btnsearch {
-  border-radius: 0;
-}
-/* line 50, ../../sass/pages/compact.scss */
-.left-content .btn-block {
-  margin: 15px 0;
-  background-color: black;
-  width: 100%;
-  border-radius: 0;
-  font-size: 12px;
-}
-/* line 57, ../../sass/pages/compact.scss */
-.left-content .selected {
-  font-size: 14px;
+/* line 36, ../../sass/pages/compact.scss */
+.section-content .section-filter h6 {
   font-weight: bold;
-  text-align: center;
+  line-height: 14px;
 }
-/* line 62, ../../sass/pages/compact.scss */
-.left-content .filters {
-  padding-right: 20px;
-  font-size: 14px;
-  font-weight: bold;
-  text-align: right;
+/* line 41, ../../sass/pages/compact.scss */
+.section-content .section-filter dl dt {
+  font-weight: normal;
 }
-/* line 68, ../../sass/pages/compact.scss */
-.left-content .side {
-  line-height: 20px;
-  text-align: right;
-  color: gray;
+/* line 43, ../../sass/pages/compact.scss */
+.section-content .section-filter dl dt a span {
+  position: absolute;
+  right: -15px;
+  top: 1px;
 }
-/* line 73, ../../sass/pages/compact.scss */
-.left-content .side dt a {
-  text-decoration: none;
-  color: gray;
+/* line 51, ../../sass/pages/compact.scss */
+.section-content .section-filter dl a {
+  color: inherit;
+  text-decoration: inherit;
+  cursor: inherit;
+  color: #999;
+  cursor: pointer;
+  position: relative;
 }
-/* line 78, ../../sass/pages/compact.scss */
-.left-content .side dd {
-  padding-right: 10px;
+/* line 6, C:/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
+.section-content .section-filter dl a:active, .section-content .section-filter dl a:focus {
+  outline: none;
 }
-/* line 80, ../../sass/pages/compact.scss */
-.left-content .side dd .all {
+/* line 24, C:/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.section-content .section-filter dl a:hover {
   color: #000;
 }
-/* line 83, ../../sass/pages/compact.scss */
-.left-content .side dd a {
-  text-decoration: none;
-  color: gray;
+/* line 61, ../../sass/pages/compact.scss */
+.section-content .section-filter dl.filter-collapse dd a {
+  display: none;
 }
-/* line 6, ../../sass/pages/mixin/common.scss */
-.left-content .side dd a :hover {
-  color: gray;
-}
-
-/**right-content begin*/
-/* line 92, ../../sass/pages/compact.scss */
-.right-content {
-  position: relative;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
-  position: relative;
-  float: left;
-  width: 58.33333333%;
-  min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+/* line 68, ../../sass/pages/compact.scss */
+.section-content .section-thumbs {
   display: table-cell;
-  padding-top: 40px;
+  text-align: left;
 }
-@media (min-width: 992px) {
-  /* line 92, ../../sass/pages/compact.scss */
-  .right-content {
-    float: left;
-    width: 83.33333333%;
-  }
-}
-/* line 97, ../../sass/pages/compact.scss */
-.right-content .image {
+/* line 72, ../../sass/pages/compact.scss */
+.section-content .section-thumbs .image {
   position: relative;
   float: left;
   width: 100%;
@@ -3418,24 +3353,22 @@ standard
   padding-right: 15px;
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 @media (min-width: 768px) {
-  /* line 97, ../../sass/pages/compact.scss */
-  .right-content .image {
+  /* line 72, ../../sass/pages/compact.scss */
+  .section-content .section-thumbs .image {
     float: left;
     width: 25%;
   }
 }
 @media (min-width: 992px) {
-  /* line 97, ../../sass/pages/compact.scss */
-  .right-content .image {
+  /* line 72, ../../sass/pages/compact.scss */
+  .section-content .section-thumbs .image {
     float: left;
     width: 16.66666667%;
   }
 }
-
-/**right-content end*/
 
 /*# sourceMappingURL=compact.css.map */

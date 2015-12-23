@@ -12,24 +12,14 @@
     <script src="../js/jquery-1.9.1.min.js"></script>
     <script src="../js/bootstrap.min.js"></script>
     <script src="../js/jquery-ui.min.js"></script>
-<script type="text/javascript">
-jQuery(".sign-at").ready(function () {
-    var sign=jQuery(".sign-at");
-    var minus=new Array("#minus","#minus1","#minus2","#minus3","#minus4","#minus5");
-    var plus=new Array("#plus","#plus1","#plus2","#plus3","#plus4","#plus5");
-    jQuery(sign).hover(function(){
-                jQuery(this).css("color","black");
-        },
-        function(){
-            jQuery(this).css("color","gray");
+    <script type="text/javascript">
+        jQuery(document).ready(function(){
+           jQuery(".section-filter dl dt").click(function(){
+              jQuery(this).parent().toggleClass("filter-collapse");
+           });
         });
-                    jQuery(".sign-at").click(function () {
-                        jQuery("dd").hide("slow", function () {
-                        });
-                    })
-})
 
-</script>
+    </script>
 </head>
 <body>
 <header class="">
@@ -39,150 +29,115 @@ jQuery(".sign-at").ready(function () {
     <div class="section-search">
         <div class="search-bar">
             <div>
-                <ul class="pull-right">
-                    <li>
-                        <a href="#"><span class="glyphicon glyphicon-pause">Standard</span></a>
-                    </li>
-                    <li>
-                        <a class="inactive" aria-checked="#">
-                            <span class="glyphicon glyphicon-th">Compact</span>
-                        </a>
-                    </li>
-                </ul>
                 <span class="pull-left text-uppercase">Talent</span>
                 <span class="center-block text-center">73 Artists Found</span>
             </div>
         </div>
     </div>
-</div>
-<!--section-search--end-->
-<!---left-content---begin-->
-<div class="container">
-    <div class="row">
-        <div class=" left-content">
+    <div class="section-content">
+        <div class="section-filter">
             <div class="input-group">
-                <input type="text" class="form-control btnsearch" placeholder="FIND">
-        <span class="input-group-btn">
-         <button class="btn btn-default btnsearch " type="button">
-             <span class="glyphicon glyphicon-search " aria-hidden=""></span>
-         </button></span>
+                <input type="text" class="form-control" placeholder="Find Talent">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="button">
+                        <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                    </button>
+                </span>
             </div>
-            <button class="btn btn-primary btn-block">SEARCH</button>
-            <div class=" selected">SELECTED  FILTERS </div>
-        <hr>
-            <div class= "filters">FILTERS</div>
-
-            <dl class="side ">
-                <dt>GENDER&nbsp;&nbsp;&nbsp;<a href="#"class="sign-at" >
-                    <span class=" icon-minus-sign-alt" id="minus"></span>
-                    <span class=" icon-plus-sign-alt" id="plus"></span>
-                </a></dt>
-                <dd><a href="#" >Men</a></dd>
-                <dd><a href="#" >Women</a></dd>
-            </dl>
-            <dl class="side ">
-                <dt>REGION&nbsp;&nbsp;&nbsp;<a href="#"class="sign-at" >
-                    <span class="icon-minus-sign-alt" id="minus1"></span>
-                    <span class=" icon-plus-sign-alt" id="plus1"></span>
-                </a></dt>
-                <dd><a class="all active">All</a></dd>
-                <dd><a href="#" >NSW</a></dd>
-                <dd><a href="#" >QLD</a></dd>
-                <dd><a href="#" >VIC</a></dd>
-
-            </dl>
-            <dl class="side">
-                <dt>TYPE&nbsp;&nbsp;&nbsp;<a href="#"class="sign-at" >
-                    <span class="icon-minus-sign-alt" id="minus2"></span>
-                    <span class=" icon-plus-sign-alt" id="plus2"></span>
-                </a></dt>
-                <dd><a class="all active">All</a></dd>
-                <dd><a href="#" >Actor</a></dd>
-                <dd><a href="#" >Dancer</a></dd>
-                <dd><a href="#" >Presenter</a></dd>
-                <dd><a href="#" >Model</a></dd>
-                <dd><a href="#" >Dancer</a></dd>
-                <dd><a href="#" >Dancer</a></dd>
-                <dd><a href="#" >Dancer</a></dd>
-                <dd><a href="#" >Dancer</a></dd>
-                <dd><a href="#" >Dancer</a></dd>
-            </dl>
-            <dl class="side">
-                <dt>DEPARTMENT &nbsp;&nbsp;&nbsp;<a href="#"class="sign-at" >
-                    <span class="icon-minus-sign-alt" id="minus3"></span>
-                    <span class=" icon-plus-sign-alt" id="plus3"></span>
-                </a></dt>
-                <dd><a class="all active">All</a></dd>
-                <dd><a href="#" ></a></dd>
-            </dl>
-            <dl class="side">
-                <dt>ETHNICITY&nbsp;&nbsp;&nbsp;<a href="#"class="sign-at" >
-                    <span class="icon-minus-sign-alt" id="minus4"></span>
-                    <span class=" icon-plus-sign-alt" id="plus4"></span>
-                </a></dt>
+            <button class="btn btn-primary btn-block btn-search">SEARCH</button>
+            <h6>SELECTED<br/>FILTERS </h6>
+            <hr>
+            <h6>FILTERS </h6>
+            <dl>
+                <dt><a a href="javascript:void(0);">ETHNICITY<span></span></a></dt>
                 <dd><a class="all active">All</a></dd>
                 <dd><a href="#" >Asian</a></dd>
                 <dd><a href="#" >Europen</a></dd>
                 <dd><a href="#" >Maoric</a></dd>
                 <dd><a href="#" >Chinese</a></dd>
-
             </dl>
-            <dl class="side">
-                <dt>AGE&nbsp;&nbsp;&nbsp;<a href="#"class="sign-at" >
-                    <span class="icon-minus-sign-alt" id="minus5"></span>
-                    <span class=" icon-plus-sign-alt" id="plus5"></span>
-                </a></dt>
+            <dl>
+                <dt><a>ETHNICITY<span></span></a></dt>
                 <dd><a class="all active">All</a></dd>
-                <dd><a href="#" >16-20</a></dd>
-                <dd><a href="#" >21-30</a></dd>
-                <dd><a href="#" >31-40</a></dd>
-                <dd><a href="#" >41-50</a></dd>
+                <dd><a href="#" >Asian</a></dd>
+                <dd><a href="#" >Europen</a></dd>
+                <dd><a href="#" >Maoric</a></dd>
+                <dd><a href="#" >Chinese</a></dd>
             </dl>
+            <dl>
+                <dt><a>ETHNICITY<span></span></a></dt>
+                <dd><a class="all active">All</a></dd>
+                <dd><a href="#" >Asian</a></dd>
+                <dd><a href="#" >Europen</a></dd>
+                <dd><a href="#" >Maoric</a></dd>
+                <dd><a href="#" >Chinese</a></dd>
+            </dl>
+            <dl>
+                <dt><a>ETHNICITY<span></span></a></dt>
+                <dd><a class="all active">All</a></dd>
+                <dd><a href="#" >Asian</a></dd>
+                <dd><a href="#" >Europen</a></dd>
+                <dd><a href="#" >Maoric</a></dd>
+                <dd><a href="#" >Chinese</a></dd>
+            </dl>
+            <dl>
+                <dt><a>ETHNICITY<span></span></a></dt>
+                <dd><a class="all active">All</a></dd>
+                <dd><a href="#" >Asian</a></dd>
+                <dd><a href="#" >Europen</a></dd>
+                <dd><a href="#" >Maoric</a></dd>
+                <dd><a href="#" >Chinese</a></dd>
+            </dl>
+            <dl>
+                <dt><a>ETHNICITY<span></span></a></dt>
+                <dd><a class="all active">All</a></dd>
+                <dd><a href="#" >Asian</a></dd>
+                <dd><a href="#" >Europen</a></dd>
+                <dd><a href="#" >Maoric</a></dd>
+                <dd><a href="#" >Chinese</a></dd>
+            </dl>
+
         </div>
-<!--left-content-end-->
-        <!--right-content-begin-->
-        <div class=" right-content">
-
+        <div class="section-thumbs container-fluid">
             <div class="row">
-                <div class="image"><img src="../images/jing2.PNG" class=" img-responsive">
-                  <span>  Jing Bo Ran</span>
-                </div>
-                <div class="image"><img src="../images/jing2.PNG" class="img-responsive">
+                <div class="image"><img src="../images/headshot1.jpg" class=" img-responsive">
                     <span>  Jing Bo Ran</span>
                 </div>
-                <div class="image"><img src="../images/jing2.PNG" class="img-responsive">
+                <div class="image"><img src="../images/headshot1.jpg" class="img-responsive">
                     <span>  Jing Bo Ran</span>
                 </div>
-                <div class="image"><img src="../images/jing2.PNG" class="img-responsive">
+                <div class="image"><img src="../images/headshot1.jpg" class="img-responsive">
                     <span>  Jing Bo Ran</span>
                 </div>
-                <div class="image"><img src="../images/jing2.PNG" class="img-responsive">
+                <div class="image"><img src="../images/headshot1.jpg" class="img-responsive">
                     <span>  Jing Bo Ran</span>
                 </div>
-                <div class="image"><img src="../images/jing2.PNG" class="img-responsive">
+                <div class="image"><img src="../images/headshot1.jpg" class="img-responsive">
+                    <span>  Jing Bo Ran</span>
+                </div>
+                <div class="image"><img src="../images/headshot1.jpg" class="img-responsive">
                     <span>  Jing Bo Ran</span>
                 </div>
 
-                <div class="image"><img src="../images/jing2.PNG" class="img-responsive">
+                <div class="image"><img src="../images/headshot1.jpg" class="img-responsive">
                     <span>  Jing Bo Ran</span>
                 </div>
-                <div class="image"><img src="../images/jing2.PNG" class="img-responsive">
+                <div class="image"><img src="../images/headshot1.jpg" class="img-responsive">
                     <span>  Jing Bo Ran</span>
                 </div>
-                <div class="image"><img src="../images/jing2.PNG" class="img-responsive">
+                <div class="image"><img src="../images/headshot1.jpg" class="img-responsive">
                     <span>  Jing Bo Ran</span></div>
-                <div class="image"><img src="../images/jing2.PNG" class="img-responsive">
+                <div class="image"><img src="../images/headshot1.jpg" class="img-responsive">
                     <span>  Jing Bo Ran</span></div>
-                <div class="image"><img src="../images/jing2.PNG" class="img-responsive">
+                <div class="image"><img src="../images/headshot1.jpg" class="img-responsive">
                     <span>  Jing Bo Ran</span>
                 </div>
-                <div class="image"><img src="../images/jing2.PNG" class="img-responsive">
+                <div class="image"><img src="../images/headshot1.jpg" class="img-responsive">
                     <span>  Jing Bo Ran</span></div>
-</div>
             </div>
-        <!--right-content--end-->
         </div>
     </div>
+</div>
 
 </body>
 </html>
