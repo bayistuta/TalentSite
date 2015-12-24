@@ -6,12 +6,13 @@ standard
   :hover{
     color: $color;
   }
+
 }
 @mixin a-link($color){
-  text-decoration: underline;
+  text-decoration: none;
   color:$color;
   :hover{
-    text-decoration: underline;
+    text-decoration: none;
     color: $color;
   }
 }

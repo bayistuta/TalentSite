@@ -12,7 +12,6 @@ display: table;
     .leftcontent{
       display: table-cell;
       .image{
-        display: table-cell;
         @include  make-xs-column(6);
         @include  make-sm-column(12);
         @include  make-md-column(6);

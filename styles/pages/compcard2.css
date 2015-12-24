@@ -16,7 +16,7 @@ standard
   font-style: normal;
 }
 /* line 4, ../../sass/plugins/font-awesome/_core.scss */
-.fa, .section-content .section-filter dl dt a span {
+.fa {
   display: inline-block;
   font: normal normal normal 14px/1 FontAwesome;
   font-size: inherit;
@@ -101,11 +101,11 @@ standard
 }
 
 /* line 14, ../../sass/plugins/font-awesome/_bordered-pulled.scss */
-.fa.fa-pull-left, .section-content .section-filter dl dt a span.fa-pull-left {
+.fa.fa-pull-left {
   margin-right: .3em;
 }
 /* line 15, ../../sass/plugins/font-awesome/_bordered-pulled.scss */
-.fa.fa-pull-right, .section-content .section-filter dl dt a span.fa-pull-right {
+.fa.fa-pull-right {
   margin-left: .3em;
 }
 
@@ -121,11 +121,11 @@ standard
 }
 
 /* line 23, ../../sass/plugins/font-awesome/_bordered-pulled.scss */
-.fa.pull-left, .section-content .section-filter dl dt a span.pull-left {
+.fa.pull-left {
   margin-right: .3em;
 }
 /* line 24, ../../sass/plugins/font-awesome/_bordered-pulled.scss */
-.fa.pull-right, .section-content .section-filter dl dt a span.pull-right {
+.fa.pull-right {
   margin-left: .3em;
 }
 
@@ -1410,7 +1410,7 @@ standard
 }
 
 /* line 260, ../../sass/plugins/font-awesome/_icons.scss */
-.fa-plus-square:before, .section-content .section-filter dl.filter-collapse dt a span:before {
+.fa-plus-square:before {
   content: "";
 }
 
@@ -1741,7 +1741,7 @@ standard
 }
 
 /* line 331, ../../sass/plugins/font-awesome/_icons.scss */
-.fa-minus-square:before, .section-content .section-filter dl dt a span:before {
+.fa-minus-square:before {
   content: "";
 }
 
@@ -3259,88 +3259,49 @@ standard
   content: "";
 }
 
-/* line 7, ../../sass/pages/compact.scss */
-.talent-content {
-  margin-top: 150px;
-}
-
-/**section-search begin*/
-/* line 12, ../../sass/pages/compact.scss */
-.section-search .search-bar {
-  padding: 0 10%;
-  height: 30px;
-  line-height: 30px;
-  overflow: hidden;
-  background-color: #f6f6f6;
-}
-
-/**section-search end*/
-/* line 21, ../../sass/pages/compact.scss */
-.section-content {
-  padding: 20px 10% 0px;
+/* line 9, ../../sass/pages/compcard2.scss */
+.all {
+  padding: 20px 10% 0;
   display: table;
-  text-align: right;
 }
-/* line 25, ../../sass/pages/compact.scss */
-.section-content .section-filter {
+/* line 12, ../../sass/pages/compcard2.scss */
+.all .leftcontent {
   display: table-cell;
-  width: 200px;
-  padding-right: 40px;
 }
-@media (max-width: 320px) {
-  /* line 25, ../../sass/pages/compact.scss */
-  .section-content .section-filter {
-    width: 120px;
-    padding-right: 10px;
+/* line 14, ../../sass/pages/compcard2.scss */
+.all .leftcontent .image {
+  position: relative;
+  float: left;
+  width: 50%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-bottom: 20px;
+}
+@media (min-width: 768px) {
+  /* line 14, ../../sass/pages/compcard2.scss */
+  .all .leftcontent .image {
+    float: left;
+    width: 100%;
   }
 }
-/* line 33, ../../sass/pages/compact.scss */
-.section-content .section-filter .btn-search {
-  margin-top: 10px;
+@media (min-width: 992px) {
+  /* line 14, ../../sass/pages/compcard2.scss */
+  .all .leftcontent .image {
+    float: left;
+    width: 50%;
+  }
 }
-/* line 36, ../../sass/pages/compact.scss */
-.section-content .section-filter h6 {
-  font-weight: bold;
-  line-height: 14px;
-}
-/* line 41, ../../sass/pages/compact.scss */
-.section-content .section-filter dl dt {
-  font-weight: normal;
-}
-/* line 43, ../../sass/pages/compact.scss */
-.section-content .section-filter dl dt a span {
-  position: absolute;
-  right: -15px;
-  top: 1px;
-}
-/* line 51, ../../sass/pages/compact.scss */
-.section-content .section-filter dl a {
-  color: inherit;
-  text-decoration: inherit;
-  cursor: inherit;
-  color: #999;
-  cursor: pointer;
-  position: relative;
-}
-/* line 6, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_unstyled-link.scss */
-.section-content .section-filter dl a:active, .section-content .section-filter dl a:focus {
-  outline: none;
-}
-/* line 24, C:/Ruby22/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
-.section-content .section-filter dl a:hover {
-  color: #000;
-}
-/* line 63, ../../sass/pages/compact.scss */
-.section-content .section-filter dl.filter-collapse dd a {
-  display: none;
-}
-/* line 69, ../../sass/pages/compact.scss */
-.section-content .section-thumbs {
-  display: table-cell;
-  text-align: left;
-}
-/* line 72, ../../sass/pages/compact.scss */
-.section-content .section-thumbs .image {
+/* line 20, ../../sass/pages/compcard2.scss */
+.all .leftcontent dl {
   position: relative;
   float: left;
   width: 100%;
@@ -3353,22 +3314,86 @@ standard
   padding-right: 15px;
   position: relative;
   min-height: 1px;
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 @media (min-width: 768px) {
-  /* line 72, ../../sass/pages/compact.scss */
-  .section-content .section-thumbs .image {
+  /* line 20, ../../sass/pages/compcard2.scss */
+  .all .leftcontent dl {
+    float: left;
+    width: 50%;
+  }
+}
+@media (min-width: 992px) {
+  /* line 20, ../../sass/pages/compcard2.scss */
+  .all .leftcontent dl {
     float: left;
     width: 25%;
   }
 }
+/* line 24, ../../sass/pages/compcard2.scss */
+.all .leftcontent dl dt {
+  color: black;
+}
+/* line 29, ../../sass/pages/compcard2.scss */
+.all .rightpage {
+  display: table-cell;
+}
+/* line 33, ../../sass/pages/compcard2.scss */
+.all .rightpage .rightcontent .image {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 @media (min-width: 992px) {
-  /* line 72, ../../sass/pages/compact.scss */
-  .section-content .section-thumbs .image {
+  /* line 33, ../../sass/pages/compcard2.scss */
+  .all .rightpage .rightcontent .image {
     float: left;
-    width: 16.66666667%;
+    width: 100%;
+  }
+}
+/* line 36, ../../sass/pages/compcard2.scss */
+.all .rightpage .rightcontent .logo {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  /* line 36, ../../sass/pages/compcard2.scss */
+  .all .rightpage .rightcontent .logo {
+    float: left;
+    width: 100%;
+  }
+}
+/* line 39, ../../sass/pages/compcard2.scss */
+.all .rightpage .rightcontent .address {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  /* line 39, ../../sass/pages/compcard2.scss */
+  .all .rightpage .rightcontent .address {
+    float: left;
+    width: 50%;
+  }
+}
+/* line 42, ../../sass/pages/compcard2.scss */
+.all .rightpage .rightcontent .phone {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  /* line 42, ../../sass/pages/compcard2.scss */
+  .all .rightpage .rightcontent .phone {
+    float: left;
+    width: 50%;
   }
 }
 
-/*# sourceMappingURL=compact.css.map */
+/*# sourceMappingURL=compcard2.css.map */
