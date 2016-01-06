@@ -26,6 +26,7 @@
     display: table-cell;
     width: 200px;
     padding-right:40px;
+    vertical-align: top;
     @media(max-width: 320px){
       width: 120px;
       padding-right: 10px;
@@ -68,10 +69,11 @@
   .section-thumbs{
     display: table-cell;
     text-align: left;
+    vertical-align: top;
     .image{
       @include make-xs-column(12);
       @include make-sm-column(3);
-      @include make-md-column(2,10px);
+      @include make-md-column(2,15px);
     }
   }
 }
