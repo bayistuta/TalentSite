@@ -9,20 +9,25 @@
     <title></title>
     <link rel="stylesheet" href="../../styles/all.css">
     <link rel="stylesheet" href="../../styles/pages/standard.css" />
-    <link rel="stylesheet" href="../../js/vendor/jquery.selectBoxIt/jquery.selectBoxIt.css" />
     <script src="../../js/vendor/jquery/jquery-1.9.1.min.js"></script>
     <script src="../../js/vendor/bootstrap/bootstrap.min.js"></script>
     <script src="../../js/vendor/blueimp-gallery/js/jquery.blueimp-gallery.min.js"></script>
-    <script src="../../js/vendor/AngularJS/angular.js"></script>
-    <script src="../../js/vendor/AngularJS/angular-sanitize.js"></script>
+    <script src="../../js/vendor/underscore/underscore.js"></script>
+    <script src="../../js/vendor/angularJS/angular.js"></script>
+    <script src="../../js/vendor/angularJS/angular-route.js"></script>
+    <script src="../../js/vendor/angularJS/angular-sanitize.js"></script>
     <script src="../../js/vendor/ngLazyImage/lazy-image.min.js"></script>
+    <script src="../../js/vendor/angular.UI/select.js"></script>
     <script src="../../js/app/app.js"></script>
     <script src="../../js/app/services/artistService.js"></script>
+    <script src="../../js/app/services/filterService.js"></script>
     <script src="../../js/app/controllers/artistListController.js"></script>
     <script src="../../js/app/directives/artist.js"></script>
+    <script src="../../js/app/filters/nameModel.js"></script>
     <script src="../../data/statistics.json"></script>
     <link rel="stylesheet" href="../../js/vendor/blueimp-gallery/css/blueimp-gallery.min.css" />
     <link rel="stylesheet" href="../../js/vendor/ngLazyImage/lazy-image-style.min.css" />
+    <link rel="stylesheet" href="../../js/vendor/angular.UI/select.css" />
     <script>
         jQuery(document).ready(function(){
             angular.bootstrap(document,["talent"]);
@@ -37,14 +42,14 @@
         <section class="section-search">
             <div class="search-bar">
                 <div>
-                    <span class="center-block text-center">73 Artists Found</span>
+                    <span class="center-block text-center">{{artists.length}} Artists Found</span>
                 </div>
             </div>
 
             <div class="search-filter-head">
                 <a class="pull-right" href="javascript:void(0);" ng-click="showFilter=!showFilter">Search Filter<span class="caret"></span></a>
                 <div class="input-group pull-left">
-                    <input type="text" class="form-control" placeholder="Find Talent">
+                    <input type="text" class="form-control" placeholder="Find Talent" ng-model="nameFilter">
                         <span class="input-group-btn">
                             <button class="btn btn-default" type="button">
                                 <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
@@ -56,91 +61,14 @@
             <div class="search-filters" ng-show="showFilter">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="filter">
-                            <select class="form-control sboxit">
-                                <option>Select your country</option>
-                                <option value="al">Albania</option>
-                                <option value="au">Australia</option>
-                            </select>
+                        <div class="filter" ng-repeat=" filter in filters">
+                            <ui-select theme="bootstrap" ng-model="filter.selectedItem">
+                                <ui-select-match placeholder="{{filter.Name}}">{{$select.selected.Text}}</ui-select-match>
+                                <ui-select-choices repeat="item in filter.Items | filter: $select.search">
+                                    <span ng-bind-html="item.Text | highlight: $select.search"></span>
+                                </ui-select-choices>
+                            </ui-select>
                         </div>
-                        <div class="filter">
-                            <select class="form-control sboxit">
-                                <option>Select your country</option>
-                                <option value="al">Albania</option>
-                                <option value="au">Australia</option>
-                            </select>
-                        </div>
-                        <div class="filter">
-                            <select class="form-control sboxit">
-                                <option>Select your country</option>
-                                <option value="al">Albania</option>
-                                <option value="au">Australia</option>
-                            </select>
-                        </div>
-                        <div class="filter">
-                            <select class="form-control sboxit">
-                                <option>Select your country</option>
-                                <option value="al">Albania</option>
-                                <option value="au">Australia</option>
-                            </select>
-                        </div>
-                        <div class="filter">
-                            <select class="form-control sboxit">
-                                <option>Select your country</option>
-                                <option value="al">Albania</option>
-                                <option value="au">Australia</option>
-                            </select>
-                        </div>
-                        <div class="filter">
-                            <select class="form-control sboxit">
-                                <option>Select your country</option>
-                                <option value="al">Albania</option>
-                                <option value="au">Australia</option>
-                            </select>
-                        </div>
-                        <div class="filter">
-                            <select class="form-control sboxit">
-                                <option>Select your country</option>
-                                <option value="al">Albania</option>
-                                <option value="au">Australia</option>
-                            </select>
-                        </div>
-                        <div class="filter">
-                            <select class="form-control sboxit">
-                                <option>Select your country</option>
-                                <option value="al">Albania</option>
-                                <option value="au">Australia</option>
-                            </select>
-                        </div>
-                        <div class="filter">
-                            <select class="form-control sboxit">
-                                <option>Select your country</option>
-                                <option value="al">Albania</option>
-                                <option value="au">Australia</option>
-                            </select>
-                        </div>
-                        <div class="filter">
-                            <select class="form-control sboxit">
-                                <option>Select your country</option>
-                                <option value="al">Albania</option>
-                                <option value="au">Australia</option>
-                            </select>
-                        </div>
-                        <div class="filter">
-                            <select class="form-control sboxit">
-                                <option>Select your country</option>
-                                <option value="al">Albania</option>
-                                <option value="au">Australia</option>
-                            </select>
-                        </div>
-                        <div class="filter">
-                            <select class="form-control sboxit">
-                                <option>Select your country</option>
-                                <option value="al">Albania</option>
-                                <option value="au">Australia</option>
-                            </select>
-                        </div>
-
                         <div class="submit">
                             <a class="btn btn-primary btn-block">Serach</a>
                         </div>
@@ -150,14 +78,16 @@
         </section>
         <!-- search end-->
         <!-- list begin -->
+        <!--
         <section class="section-list">
             <div class="container-fluid">
                 <div class="row">
-                    <artist ng-repeat="artist in artists" intro="artist">
+                    <artist ng-repeat="artist in artists | filter:nameFilter" intro="artist">
                     </artist>
                 </div>
             </div>
         </section>
+        -->
         <!-- list end-->
     </div>
 </div>

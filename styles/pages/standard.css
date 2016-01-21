@@ -3256,7 +3256,7 @@
   content: "";
 }
 
-/*serch section begin */
+/*search section begin */
 /* line 9, ../../sass/pages/standard.scss */
 .section-search .search-bar {
   padding: 0 10%;
@@ -3278,7 +3278,7 @@
   text-transform: uppercase;
   text-decoration: none;
 }
-/* line 4, C:/Ruby/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_hover-link.scss */
+/* line 4, ../../../../../../.rvm/gems/ruby-1.9.3-p362/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_hover-link.scss */
 .section-search .search-filter-head a:first-child:hover, .section-search .search-filter-head a:first-child:focus {
   text-decoration: underline;
 }
@@ -3380,7 +3380,7 @@
   padding: 20px 5%;
 }
 /* line 58, ../../sass/pages/standard.scss */
-.section-list .image {
+.section-list .artist {
   margin-bottom: 15px;
   display: inline-block;
   vertical-align: middle;
@@ -3404,22 +3404,55 @@
 }
 @media (min-width: 768px) {
   /* line 58, ../../sass/pages/standard.scss */
-  .section-list .image {
+  .section-list .artist {
     float: left;
     width: 33.33333333%;
   }
 }
 @media (min-width: 992px) {
   /* line 58, ../../sass/pages/standard.scss */
-  .section-list .image {
+  .section-list .artist {
     float: left;
     width: 25%;
   }
 }
 /* line 64, ../../sass/pages/standard.scss */
-.section-list .image span {
-  margin-top: 3px;
+.section-list .artist .info {
+  padding-top: 5px;
+}
+/* line 66, ../../sass/pages/standard.scss */
+.section-list .artist .info .artistName {
   display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+  -ms-text-overflow: ellipsis;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  max-width: 50%;
+}
+/* line 72, ../../sass/pages/standard.scss */
+.section-list .artist .info .profile-icon {
+  margin: 5px 8px 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  color: #000;
+  cursor: pointer;
+  font-size: 14px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+}
+/* line 79, ../../sass/pages/standard.scss */
+.section-list .artist .info .profile-icon:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=90);
+  opacity: 0.9;
 }
 
 /* gallery end */

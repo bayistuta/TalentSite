@@ -15982,7 +15982,7 @@ function $RootScopeProvider() {
        * Application code can register a `$destroy` event handler that will give it a chance to
        * perform any necessary cleanup.
        *
-       * Note that, in AngularJS, there is also a `$destroy` jQuery event, which can be used to
+       * Note that, in angularJS, there is also a `$destroy` jQuery event, which can be used to
        * clean up DOM bindings before an element is removed from the DOM.
        */
       $destroy: function() {
@@ -28870,7 +28870,7 @@ var minlengthDirective = function() {
 };
 
 if (window.angular.bootstrap) {
-  //AngularJS is already loaded, so we can return here...
+  //angularJS is already loaded, so we can return here...
   console.log('WARNING: Tried to load angular more than once.');
   return;
 }
